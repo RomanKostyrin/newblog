@@ -1,38 +1,55 @@
 <!DOCTYPE html>
-<html lang="ru"> 
+<html lang="en">
 <head>
-	  <link href="style.css" rel="stylesheet">
-	  <title>My first page</title>
-	      <meta charset="utf-8">
-	      <meta name="keywords" content="важные, ключевые, слова">
-	      <meta name="description" content="краткое описание">
+	<meta charset="UTF-8">
+	<title>AlpArtel</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
-		<img class="avatar" src="img/sniper.jpg" width="160" alt="Аватарка">
-		<nav  class="marg">
-			<ul>
-				<li><a href="index.html">Пункт 111</a></li>
-				<li><a href="index.html">Пункт 2</a></li>
-				<li><a href="index.html">Пункт 3</a></li>
-			</ul>
-		</nav>
-	</header><br>
-<main>
-<article><h2>Вход</h2>
-<form class="login" method="post" action="">
-      <label for="login">Логин</label>
-      <input type="text" id="login" name="login" />
-      <label for="password">Пароль</label>
-      <input type="password" id="password" name="password" />
-      <input type="submit" value="Войти" />
-    </form>
-</article>
 
-	<!-- <section>
-	часть чего то
-</section>
-<aside>Боковая панель</aside> -->
-</main>
-<footer>footer</footer>
+	<header>
+		<div class="header-container">
+			<div class="logo">
+				<img src="img/logo.jpeg" alt="logo">
+			</div>
+			<input type="checkbox" id="menu-checkbox">
+			<nav role="navigation">
+				<label for="menu-checkbox" class="toggle-button" data-open="Menu" data-close="Close" onclick>
+					<ul class="main-menu">
+						<li><a href="#">ГЛАВНАЯ</a></li>
+						<li><a href="#">О НАС</a></li>
+						<li><a href="#">ФОТО</a></li>
+						<li><a href="#">ЦЕНЫ</a></li>
+						<li><a href="#">КОНТАКТЫ</a></li>
+					</ul>
+				</label>
+			</nav>
+		</div>
+	</header>
+	<section id="section_1" type="section_one">	
+<h1 class="h1head">Промышленный альпинизм</h1>
+<span class="icon icon-mail"></span>
+<p class="phead">alp-artel@mail.ru</p>
+<span class="icon icon-phone"></span>
+<p class="phead">8 (909) 925 95 18</p>
+	</section>
+		<section id="section_2" type="section_one">	
+
+
+	</section>
+	<section id="section_3" type="section_one">	
+3
+	</section>
+	<footer>
+		Альп-Артель
+	</footer>
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
+</html>
