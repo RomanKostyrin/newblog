@@ -1,0 +1,141 @@
+body{
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+list-style: none;
+display: flex;
+}
+a{
+	text-decoration: none;
+}
+.h1head{
+	font-family: 'Arial', serif;
+	font-size: 60px;
+	text-align:center;
+	text-transform:uppercase;
+	color:white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+padding:100px 0;
+}
+header{
+	background: #F7F7F7FF;
+	padding: 12px 0;
+	 border: 1px solid #1D5251FF;
+
+}
+
+.header-container{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-container a{
+	color:#000;
+	font-size: 22px;
+	margin-right: 63px;
+	padding: 26px 6px;
+}
+#menu-checkbox{
+	display: none;
+}
+.header-container a:hover{
+	background-color: #405CBEFF;
+}
+.phead{
+	margin-top:20px;
+	font-family: 'Arial', serif;
+	font-size:40px;
+	text-align:center;
+	text-transform:uppercase;
+	color:white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+/*.icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 0 5px;
+  vertical-align: top;
+  background-image: url("img/icon.png");
+  background-repeat: no-repeat;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+
+}
+.icon-mail{
+background-position: -610px -32px;
+
+}
+.icon-phone{
+background-position: -259px -276px;
+}*/
+
+#section_1{
+	height:600px;
+	background-image: url("img/bg2.jpeg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: 50% 0%;
+	background-attachment:fixed;
+}
+#section_2{
+		background: #F7F7F7FF;
+	height:800px;
+}
+#section_3{
+	height:600px;
+	background-image: url("img/bg1.jpeg");
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-attachment:fixed;
+
+}
+ul{
+	display: flex;
+}
+nav{
+	margin-top: 20px;
+}
+footer{
+	height:200px;
+}
+
+@media screen and (max-width: 420px){
+	.header-container{
+		width: 100%;
+		display: flex;
+		justify-content:  space-around;
+	}
+	.main-menu{
+		display: none;
+	}
+	.main-menu li{
+		width: 100%;
+		display: block;
+		font-size: 12px;
+	}
+	.main-menu a{
+		display: block;
+		padding: 8px;
+	}
+	.toggle-button{
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		color: #000;
+	}
+	.toggle-button:after{
+		content: attr(data-open);
+		display: block;
+	}
+	#menu-checkbox:checked + nav[role="navigation"] .main-menu{
+		display:block;
+	}
+}
